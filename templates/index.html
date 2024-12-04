@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Sentiment Analysis</h1>
+        <form action="/analyze" method="POST" enctype="multipart/form-data">
+            <!-- Upload Image -->
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="image" required>
+
+            <!-- Enter Caption -->
+            <label for="caption">Enter Caption:</label>
+            <textarea name="caption" id="caption" required></textarea>
+
+            <!-- Enter Comment -->
+            <label for="comment">Enter Comment:</label>
+            <textarea name="comment" id="comment" required></textarea>
+
+            <!-- Analyze Button -->
+            <button type="submit">Analyze</button>
+        </form>
+
+        <!-- Error Message Display -->
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

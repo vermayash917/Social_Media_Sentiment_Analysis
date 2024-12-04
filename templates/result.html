@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Results</h1>
+
+        <!-- Image Sentiment -->
+        <div class="result-section">
+            <h2>Image Sentiment</h2>
+            <p>
+                Happy: {{ results['image_sentiment']['happy'] }}<br>
+                Sad: {{ results['image_sentiment']['sad'] }}<br>
+                Anger: {{ results['image_sentiment']['anger'] }}
+            </p>
+        </div>
+
+        <!-- Caption Sentiment -->
+        <div class="result-section">
+            <h2>Caption Sentiment</h2>
+            <p>
+                Happy: {{ results['caption_sentiment']['happy'] }}<br>
+                Sad: {{ results['caption_sentiment']['sad'] }}<br>
+                Anger: {{ results['caption_sentiment']['anger'] }}
+            </p>
+        </div>
+
+        <!-- Comment Sentiment -->
+        <div class="result-section">
+            <h2>Comment Sentiment</h2>
+            <p>
+                Happy: {{ results['comment_sentiment']['happy'] }}<br>
+                Sad: {{ results['comment_sentiment']['sad'] }}<br>
+                Anger: {{ results['comment_sentiment']['anger'] }}
+            </p>
+        </div>
+
+        <!-- Combined Image + Caption Sentiment -->
+        <div class="result-section">
+            <h2>Image + Caption Combined Sentiment</h2>
+            <p>
+                Happy: {{ results['image_caption_sentiment']['happy'] }}<br>
+                Sad: {{ results['image_caption_sentiment']['sad'] }}<br>
+                Anger: {{ results['image_caption_sentiment']['anger'] }}
+            </p>
+        </div>
+
+        <!-- Return to Home -->
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
