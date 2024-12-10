@@ -80,3 +80,13 @@ The framework addresses a critical research gap by effectively integrating visua
    ```bash
    git clone https://github.com/vermayash917/Social_Media_Sentiment_Analysis.git
    cd Social_Media_Sentiment_Analysis
+
+## **Contributors**
+
+- **Yash Verma**  
+  - Lead Developer and Researcher  
+  - [GitHub Profile](https://github.com/vermayash917)
+
+- **Ravikumar Uchadadiya**  
+  - Research Collaborator  
+  - [GitHub Profile](https://github.com/Ravipatel2505)
